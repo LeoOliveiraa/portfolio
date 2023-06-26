@@ -4,24 +4,333 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
-    <script href="script.js"></script>
+    
     <title>Portfólio</title>
     
 </head>
 
 <body>
+    <!--Header-->
+    <section id="header">
+        <a class="header-title" href="/">
+            <h1>
+                leo.dev
+            </h1>
+        </a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#person">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contacts">Contatos</a></li>
+            </ul>
+        </nav>
+
+    </section>
+    <!--End-Header-->
+
+    <!--Person-->
     <section id="person">
         <div class="person-content">
             <div class="person-name">
-                <h1>Olá,<br>
-                    Meu nome é<br>
-                    Leonardo Oliveira</h1>
+                <h1>Olá! sou o Leonardo<span></span></h1>
+                <p class="typing">Seu desenvolvedor WEB.</p>
+                </div>
+                <div class="stacks-content">
+                    <h3>Techs: </h3>
+                    
+                    <div class="stacks">
+                        <ul>
+                            <li>
+                                <div data="HTML">
+                                <img src="./svg/html.svg" alt="html-icon">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div data="CSS">
+                                <img src="./svg/css.svg" alt="css-icon">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div data="JS">
+                                <img src="./svg/js.svg" alt="js-icon">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>  
+
+             <div class="person-background">
+                <div class="wrapper-profile-photo">
+                    <img class="profile-photo" src="./img/profiletest.jpeg" alt="foto-leonardo">
+                </div>
+                <div class="links">
+                    <a href="https://github.com/LeoOliveiraa/" target="_blank">
+                    <img src="./svg/logo-github.svg" alt="icon-github">
+                    </a>
+                    <a href="https://www.instagram.com/oliveir4leo/" target="_blank">
+                    <img src="./svg/logo-insta.svg" alt="icon-instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/leonardo-oliveira-4a0036263/" target="_blank">
+                    <img src="./svg/logo-linkedin.svg" alt="icon-linkedin">
+                    </a>
+                 </div>
+             </div>
+
+        
+
+    </section>
+    <!--End-Person-->
+
+    <!--About-->
+    <section id="about">
+        <div class="background-about">
+            <div class="img-wrapper">
+                <img src="./img/img.2.jpg" alt="macbook-open">
+            </div>
+        </div>
+
+        <div class="box-about">
+            <div class="section-subtitle">
+                <h2>
+                    <p>💻</p>
+                    <p><span>Desenvolvedor</span> WEB</p>
+                </h2>
+            </div>
+
+            <h3>
+                Sou um desenvolvedor WEB com experiências em
+                <p>HTML, CSS e JavaScript</p>
+            </h3>
+
+            <h4>
+                Meu nome é Leonardo Oliveira, tenho 20 anos. Estou a procura
+                da minha primeira oportunidade de emprego na área de desenvolvimento.
+                Atualmente curso a faculdade de Engenharia de Software, paralelo a vários outros
+                cursos especializados!
+            </h4>
+
+            <h4>
+                Abaixo está o meu <p>currículo</p> para download!
+            </h4>
+
+            <div class="button-cta">
+                <a href="./public/document/Leonardo Oliveira (1).pdf" download="CV-Leonardo-Oliveira" aria-label="Baixar Currículo Leonardo">
+                    Currículo
+                </a>
             </div>
 
         </div>
 
     </section>
-    
+    <!--End-About-->
+
+    <!--Projects-->
+    <section id="projects">
+        <div class="projects-title">
+            <h2>PROJETOS 🧩</h2>
+        </div>
+        
+        <div class="container-projects">
+        <div class="swiper mySwiper">
+                <!--wrapper-projects-->
+            <div class="swiper-wrapper">
+
+                <!--content-project-->
+                <div class="swiper-slide card-project">
+                    <div class="image-project">
+                        <a href="/">
+                         <img src="./img/conversor.jpg" alt="project-conversor">
+                        </a>
+                        </div>
+
+
+                    <span>Projeto em construção</span>
+
+                    <p>Esse projeto, ainda esta em construção!</p>
+                    
+                    <div class="cta-project">
+                        <a href="/">
+                            Código
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        
+                        <a href="/">
+                            Site
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide card-project">
+                    <div class="image-project">
+                        <a href="/">
+                         <img src="./img/conversor.jpg" alt="project-conversor">
+                        </a>
+                        </div>
+
+
+                    <span>Projeto em construção</span>
+
+                    <p>Esse projeto, ainda esta em construção!</p>
+                    
+                    <div class="cta-project">
+                        <a href="/">
+                            Código
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        
+                        <a href="/">
+                            Site
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide card-project">
+                    <div class="image-project">
+                        <a href="/">
+                         <img src="./img/conversor.jpg" alt="project-conversor">
+                        </a>
+                        </div>
+
+
+                    <span>Projeto em construção</span>
+
+                    <p>Esse projeto, ainda esta em construção!</p>
+                    
+                    <div class="cta-project">
+                        <a href="/">
+                            Código
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        
+                        <a href="/">
+                            Site
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide card-project">
+                    <div class="image-project">
+                        <a href="/">
+                         <img src="./img/conversor.jpg" alt="project-conversor">
+                        </a>
+                        </div>
+
+
+                    <span>Projeto em construção</span>
+
+                    <p>Esse projeto, ainda esta em construção!</p>
+                    
+                    <div class="cta-project">
+                        <a href="/">
+                            Código
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        
+                        <a href="/">
+                            Site
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide card-project">
+                    <div class="image-project">
+                        <a href="/">
+                         <img src="./img/conversor.jpg" alt="project-conversor">
+                        </a>
+                        </div>
+
+
+                    <span>Projeto em construção</span>
+
+                    <p>Esse projeto, ainda esta em construção!</p>
+                    
+                    <div class="cta-project">
+                        <a href="/">
+                            Código
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        
+                        <a href="/">
+                            Site
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+        </div>
+    </section>
+    <!--End-Projects-->
+
+    <!--Contacts-->
+    <section id="contacts">
+        <div class="contact-content">
+            <h2>Contato 📲</h2>
+        </div>
+
+        <div class="contact-icons-wrapper">
+            <div class="contact-icon-content">
+                <div class="contact-icon">
+                    <i class="fa-sharp fa-solid fa-map-location"></i>
+                </div>
+                <div class="contact-info">
+                    <span>Localização</span>
+                    <p>Irapuã, SP</p>
+                </div>
+            </div>
+            <div class="contact-icon-content">
+                <div class="contact-icon">
+                    <i class="fa-sharp fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-info">
+                    <span>E-mail</span>
+                    <a href="mailto:leoalvesoliveira85@gmail.com">
+                        leoalvesoliveira85@gmail.com
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--End-Contacts-->
+
+    <!--Footer-->
+    <section id="footer">
+        <div class="container-footer">
+            <h2>Todos os direitos reservados!</h2>
+            <h3>Leonardo Oliveira © 2023</h3>
+        </div>
+
+    </section>
+    <!--End-Footer-->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+
 </body>
+
 </html>
