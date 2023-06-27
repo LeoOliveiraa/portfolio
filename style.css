@@ -37,6 +37,7 @@ body {
 
 }
 
+
 .header-title {
     text-decoration: none;
 }
@@ -72,7 +73,14 @@ body {
     color: var(--color-green);
     font-size: 1.4rem;
     font-weight: 700;
-    
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.menu {
+    display: none;
 }
 
 /* Começo Person*/
@@ -612,6 +620,226 @@ body {
 }
 /*Fim-Footer*/
 
+@media screen and (max-width: 1300px) {
+    .person-name h1 {
+        font-size: 5rem;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+
+    .header-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .navbar ul li a {
+        font-size: 2rem;
+    }
+
+    
+    .person-content {
+        height: 100%;
+        width: 50%;
+        padding: 0px 10px;
+    }
+
+    .person-content h1 {
+        font-size: 3.5rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .typing {
+        font-size: 2.8rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .stacks-content {
+        justify-content: center;
+    }
+
+    .stacks-content h3 {
+        font-size: 2rem;
+    }
+
+    .stacks ul li img{
+        width: 40px;
+        height: 40px ;
+    }
+
+    .profile-photo{
+        width: 50%;
+    }
+    
+    .links a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .section-subtitle h2 p {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .person-content{
+        height: 100%;
+        width: 50%;
+        padding: 0px 15px;
+    }
+
+    .person-content h1 {
+        font-size: 2.4rem;
+        
+    }
+
+    .typing {
+        font-size: 2.4rem;
+        padding: 0px 15px;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .person-background {
+        width: 50%;
+        height: 100%;
+    }
+
+    .profile-photo {
+        width: 50%;
+    }
+
+    .stacks-content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stacks-content h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .stacks ul li img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .links a img {
+        width: 30px;
+        height: 30px;
+        margin-top: 30px;
+    }
+
+    .section-subtitle h2 p {
+        font-size: 1.9rem;
+    }
+
+    .box-about h3 {
+        font-size: 1.7rem;
+    }
+
+    .box-about h4 {
+        font-size: 1.2rem;
+    }
+
+    .container-projects{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        width: 100%;
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    
+    .navbar {
+        display: none;
+    }
+
+    .person-background {
+        display: none;
+    }
+
+    .person-background::after {
+        display: none;
+    }
+
+    .person-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+    }
+    .person-name h1 {
+        font-size: 3rem;
+    }
+
+    .typing {
+        font-size: 2.6rem;
+        padding: 0rem 0rem 2rem;
+    }
+    
+    .stacks-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-right: 0rem;
+    }
+
+    .background-about {
+        display: none;
+    }
+
+    .box-about {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects-title h2 {
+        font-size: 2.6rem;
+    }
+
+    .contact-content h2 {
+        font-size: 2.6rem;
+    }
+
+    .contact-icon-content {
+        margin: 0rem 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-icon {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: .4rem;
+        background: var(--color-white);
+        padding: 1rem;
+        border-radius: 50%;
+    }
+
+    .container-footer{
+        font-size: .8rem;
+    }
+}
 
 @keyframes typing {
     from{
